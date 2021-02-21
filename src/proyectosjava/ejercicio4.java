@@ -28,7 +28,6 @@ import java.util.Scanner;
 public class ejercicio4 {
 
     public static void main(String[] args) {
-        //defina aquí el mensaje donde se muestran las opciones (Menu de opciones)
         float[] cacharNumeros = recibirNumeros();
         Scanner recibirirOpciones = new Scanner(System.in);
         while(true){
