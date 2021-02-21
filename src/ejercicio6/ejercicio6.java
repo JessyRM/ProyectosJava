@@ -1,7 +1,5 @@
 package ejercicio6;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -53,7 +51,7 @@ public class ejercicio6 {
         System.out.println(menu);
     }
 
-    private static void agregarAlumno(@NotNull List<Alumno> listaAlumno) {
+    private static void agregarAlumno(List<Alumno> listaAlumno) {
         Scanner pedirDatos = new Scanner(System.in);
         System.out.print("Nombre del Alumno: ");
         String nombreAlumno = pedirDatos.nextLine();
@@ -71,7 +69,7 @@ public class ejercicio6 {
         listaAlumno.add(alumnoNuevo);
     }
 
-    private static double promedioGrupal(@NotNull List<Alumno> listaAlumnos) {
+    private static double promedioGrupal( List<Alumno> listaAlumnos) {
         double promedios = 0;
         for (Alumno alumno : listaAlumnos) {
             promedios += alumno.calcularPromedio();
@@ -79,7 +77,7 @@ public class ejercicio6 {
         return promedios / listaAlumnos.size();
     }
 
-    private static void consultarPromedios(@NotNull List<Alumno> listaAlumnos) {
+    private static void consultarPromedios( List<Alumno> listaAlumnos) {
         for (Alumno datos : listaAlumnos) {
             System.out.printf("Nombre: " + datos.getNompreAlumno() +
                     "\nPromedio %.2f: " , datos.calcularPromedio());
